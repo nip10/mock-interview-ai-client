@@ -7,7 +7,6 @@ import { Button } from "@/components/ui/button";
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -74,7 +73,6 @@ export default function Page() {
                     {...field}
                   />
                 </FormControl>
-                <FormDescription>The role you are applying for</FormDescription>
                 <FormMessage />
               </FormItem>
             )}
@@ -101,7 +99,6 @@ export default function Page() {
                     <SelectItem value="senior">Senior</SelectItem>
                   </SelectContent>
                 </Select>
-                <FormDescription></FormDescription>
                 <FormMessage />
               </FormItem>
             )}
@@ -119,9 +116,6 @@ export default function Page() {
                     {...field}
                   />
                 </FormControl>
-                <FormDescription>
-                  You can <span>@mention</span> other users and organizations.
-                </FormDescription>
                 <FormMessage />
               </FormItem>
             )}

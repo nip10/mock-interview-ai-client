@@ -86,6 +86,13 @@ export default function Page() {
     // Connect to realtime API
     await client.connect();
 
+    client.sendUserMessageContent([
+      {
+        type: `input_text`,
+        text: `Hello!`,
+      },
+    ]);
+
     if (client.getTurnDetectionType() === "server_vad") {
       await wavRecorder.record((data) => client.appendInputAudio(data.mono));
     }
@@ -354,7 +361,7 @@ The interview should be conversational, where you assess the candidate's respons
             </div>
           ) : (
             <div className="flex flex-col gap-1 max-h-[86vh] overflow-y-auto">
-              {items.map((conversationItem) => {
+              {items.slice(1).map((conversationItem) => {
                 const isUser = conversationItem.role === "user";
                 return (
                   <div
