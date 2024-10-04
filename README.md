@@ -4,9 +4,9 @@
 
 ## Description
 
-This is an AI Mock Interview project. The project is a web application that allows users to practice their interview skills with an AI. The AI will ask the user questions and the user will respond to the questions. The AI will then provide feedback on the user's responses. The project is built using Next.js, React, and TypeScript.
+This is a web application that allows users to practice mock interviews with an AI. The user selects a role and level, and optionally a job description. The AI is powered by OpenAI's realtime API multi-modal model that suports speech to speech conversation.
 
-The server can be found [here](https://github.com/nip10/mock-interview-ai-server).
+The server can be found [here](https://github.com/nip10/mock-interview-ai-server). It uses websockets to communicate with the client.
 
 ## Reference
 
